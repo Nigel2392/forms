@@ -1,0 +1,6 @@
+github.com/Nigel2392/router/v3 v3.3.1 h1:iDXPg9u82vQ9uomWhJ4+lXQA/zikb4rracIlKn5eEM0=
+github.com/Nigel2392/router/v3 v3.3.1/go.mod h1:+SiVJcyAr9suGJ3GK13ce+cFZH6vuJVfYi/eLVkVmkE=
+github.com/Nigel2392/routevars v1.1.1 h1:jiT3/6pvafnhYTxHPUMO7C7gxmBySn0/cnXPJkUQlpY=
+github.com/Nigel2392/routevars v1.1.1/go.mod h1:NBOLgLWRaSXJraX53Q2fFpvbWKrfY2KsT8K5kz4fuMU=
+golang.org/x/text v0.9.0 h1:2sjJmO8cDvYveuX97RDLsxlyUxLl+GHoLxBiRdHllBE=
+golang.org/x/text v0.9.0/go.mod h1:e1OnstbJyHTd6l/uOt8jFFHp6TRDWZR/bV3emEE/zU8=
