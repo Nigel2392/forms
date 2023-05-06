@@ -97,11 +97,15 @@ type FormData struct {
 	Reader   io.ReadSeekCloser
 }
 
-func (f *FormData) IsFile() bool {
+// String returns the first value of the form data, or nothing.
+func (f *FormData) String() string {
 	if f == nil {
-		return false
+		return ""
 	}
-	return f.Reader != nil && f.FileName != ""
+	if len(f.Val) == 0 {
+		return ""
+	}
+	return f.Val[0]
 }
 
 func (f *FormData) Value() []string {
@@ -109,6 +113,13 @@ func (f *FormData) Value() []string {
 		return []string{}
 	}
 	return f.Val
+}
+
+func (f *FormData) IsFile() bool {
+	if f == nil {
+		return false
+	}
+	return f.Reader != nil && f.FileName != ""
 }
 
 func (f *FormData) File() (string, io.ReadSeekCloser) {

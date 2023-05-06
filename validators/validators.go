@@ -11,6 +11,7 @@ import (
 
 type FormValue interface {
 	IsFile() bool
+	String() string
 	Value() []string
 	File() (string, io.ReadSeekCloser)
 }
